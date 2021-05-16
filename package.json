@@ -6,7 +6,9 @@
   "homepage": "https://bamaboy93.github.io/goit-js-hw-10",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /parcel-project-template/"
+    "build": "parcel build src/index.html --public-url /parcel-project-template/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
