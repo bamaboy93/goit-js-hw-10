@@ -17,11 +17,17 @@ const Theme = {
   DARK: 'dark-theme',
 };
 
+refs.body.classList.add(Theme.LIGHT);
 refs.switch.addEventListener('change', setClassList);
 refs.switch.addEventListener('change', saveData);
 
+
+  
+
+
 function setClassList(evt) {
   evt.preventDefault();
+  
   
   if (refs.switch.checked) {
     refs.body.classList.add(Theme.DARK);
